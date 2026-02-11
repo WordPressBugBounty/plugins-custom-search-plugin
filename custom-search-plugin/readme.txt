@@ -1,19 +1,20 @@
-=== Custom Search by BestWebSoft - Advanced WordPress Search Bar Plugin ===
+=== Custom Search by BestWebSoft - WordPress Custom Search Plugin ===
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
-Tags: additional search options, extra search options, advanced search, add additional search options, search options, custom search, custom search plugin, website search, add custom posts to search, custom posts, free additional search options, custom content types
+Tags: custom search wordpress, search custom post type wordpress plugin, wordpress custom search form, wordpress search custom fields, custom search bar elementor, wordpress custom search results page, customize search page wordpress
 Requires at least: 5.6
-Tested up to: 6.7
+Tested up to: 6.9
 Stable tag: 1.51
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add custom post types, taxonomies, and custom fields to WordPress website search results.
+Add advanced custom search to your WordPress site. Search custom post types, taxonomies, and custom fields with full control over results.
 
 == Description ==
 
-Custom Search plugin adds custom post types, taxonomies, and custom fields to WordPress website search results. A quick and easy way to search everything within custom post types, custom fields, and taxonomies.
-Improve your website user experience today!
+Custom Search by BestWebSoft is a powerful WordPress custom search plugin that extends the default WordPress search functionality. It allows you to search custom post types, custom fields, and taxonomies with advanced filtering options.
+
+Create a better search experience for your visitors and make your content easier to find, including portfolio items, galleries, real estate listings, job boards, and more. Whether you're using Elementor, Gutenberg, or a custom theme, this plugin makes adding a custom search form simple.
 
 [View Demo](https://bestwebsoft.com/demo-custom-search-plugin/?ref=readme)
 
@@ -21,93 +22,91 @@ https://www.youtube.com/watch?v=qF2-pFM_ESw
 
 = Free Features =
 
+* Add advanced search functionality to your site
 * Search by:
-	* All custom post types including:
-		* [Galleries](https://bestwebsoft.com/products/wordpress/plugins/gallery/?k=a7970636432b7a4dcc5ad805f87b2696)
-		* [Portfolio projects](https://bestwebsoft.com/products/wordpress/plugins/portfolio/?k=2ac66bf272f5329cdf78ed8cb10d49b2)
-		* [Cars](https://bestwebsoft.com/products/wordpress/plugins/car-rental/?k=4f3314a1fe385c140e4ff9e361b2e300)
-		* [Properties & Agents](https://bestwebsoft.com/products/wordpress/plugins/realty/?k=9916846ebbdecc2ba40ce3bff4fbf9f2)
-		* [Jobs](https://bestwebsoft.com/products/wordpress/plugins/job-board/)
-	* Taxonomies:
-		* Post tags
-		* Post categories
-		* Custom taxonomies
-	* Custom fields
-* Change search results displaying:
-	* List (default)
-	* Tabs
-* Search by post types translated using [Multilanguage plugin](https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=99a0f5dc1e3172bd92208dd2e7886806)
-* Compatible with latest WordPress version
-* Incredibly simple settings for fast setup without modifying code
-* Detailed step-by-step documentations and videos
-* Multilingual and RTL ready
+  * All custom post types:
+    * [Galleries](https://bestwebsoft.com/products/wordpress/plugins/gallery/?k=a7970636432b7a4dcc5ad805f87b2696)
+    * [Portfolio](https://bestwebsoft.com/products/wordpress/plugins/portfolio/?k=2ac66bf272f5329cdf78ed8cb10d49b2)
+    * [Cars](https://bestwebsoft.com/products/wordpress/plugins/car-rental/?k=4f3314a1fe385c140e4ff9e361b2e300)
+    * [Real estate listings](https://bestwebsoft.com/products/wordpress/plugins/realty/?k=9916846ebbdecc2ba40ce3bff4fbf9f2)
+    * [Jobs](https://bestwebsoft.com/products/wordpress/plugins/job-board/)
+  * Taxonomies:
+    * Categories
+    * Tags
+    * Custom taxonomies
+  * Custom fields
+* Custom search results layout:
+  * List view (default)
+  * Tabbed view
+* Compatible with post types translated via [Multilanguage plugin](https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=99a0f5dc1e3172bd92208dd2e7886806)
+* Simple setup with no coding required
+* Fast performance with optimized queries
+* Works with any WordPress theme
+* RTL and translation-ready
 
 > **Pro Features**
 >
-> All features from Free version included plus:
+> Includes all free features plus:
 >
-> * Disable custom search for certain pages and/or post types
-> * Configure custom post types and taxonomies displaying order on the search results page
-> * Display featured image for post types on the search results page
-> * Choose featured image size
-> * Choose featured image align position:
-> 	* Left
-> 	* Right
-> * Search by the post type of the current page
-> * Change excerpt length
-> * Add custom code via plugin settings page
-> * Get answer to your question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
+> * Disable custom search on specific pages or post types
+> * Control order of custom post types and taxonomies in results
+> * Show featured images in results (choose size and alignment)
+> * Search only by current post type
+> * Set excerpt length
+> * Insert custom code via settings
+> * Priority support – 1 business day response ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
-> [Upgrade to Pro Now](https://bestwebsoft.com/products/wordpress/plugins/custom-search/?k=b67e3e538cdb8bb841b81467655eb0f7)
+> [Upgrade to Pro](https://bestwebsoft.com/products/wordpress/plugins/custom-search/?k=b67e3e538cdb8bb841b81467655eb0f7)
 
-If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! [Suggest a Feature](https://support.bestwebsoft.com/hc/en-us/requests/new)
+= Documentation & Tutorials =
 
-= Documentation & Videos =
-
-* [[Doc] User Guide](https://bestwebsoft.com/documentation/custom-search/custom-search-user-guide/)
-* [[Doc] Installation](https://bestwebsoft.com/documentation/how-to-install-a-wordpress-product/how-to-install-a-wordpress-plugin/)
-* [[Doc] Purchase](https://bestwebsoft.com/documentation/how-to-purchase-a-wordpress-plugin/how-to-purchase-wordpress-plugin-from-bestwebsoft/)
-* [[Video] Installation Instruction](https://www.youtube.com/watch?v=2tuQNyfXZ-I)
-* [[Video] Purchase, Installation, Configuration Tutorial](https://www.youtube.com/watch?v=6w7qOA9P0HY)
+* [User Guide](https://bestwebsoft.com/documentation/custom-search/custom-search-user-guide/)
+* [Installation Guide](https://bestwebsoft.com/documentation/how-to-install-a-wordpress-product/how-to-install-a-wordpress-plugin/)
+* [Purchase & Installation](https://bestwebsoft.com/documentation/how-to-purchase-a-wordpress-plugin/how-to-purchase-wordpress-plugin-from-bestwebsoft/)
+* [Video: Installation](https://www.youtube.com/watch?v=2tuQNyfXZ-I)
+* [Video: Setup Tutorial](https://www.youtube.com/watch?v=6w7qOA9P0HY)
 
 = Help & Support =
 
-Visit our Help Center if you have any questions, our friendly Support Team is happy to help - <https://support.bestwebsoft.com/>
+Need help? Visit our Help Center: <https://support.bestwebsoft.com/>
 
 = Translation =
 
-* Czech (cs_CZ) (thanks to [PaMaDeSSoft](mailto:info@pamadessoft.cz), www.pamadessoft.cz)
-* Russian (ru_RU)
-* Spanish (es_ES) (thanks to [Fernando De León](mailto:mrjosefernando@gmail.com))
-* Ukrainian (uk)
+Available in:
+* Czech, Russian, Spanish, Ukrainian, Italian, German, French, Icelandic, Arabic
 
-Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send [the text of PO and MO files](https://codex.wordpress.org/Translating_WordPress) to [BestWebSoft](https://support.bestwebsoft.com/hc/en-us/requests/new) and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO [files Poedit](https://www.poedit.net/download.php).
+Help us improve translations or add your own language – [Contribute](https://support.bestwebsoft.com/hc/en-us/requests/new)
 
 = Recommended Plugins =
 
-* [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=7b42404bbc8ad8cb8745f8704cba3c9a) - Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.
+* [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=7b42404bbc8ad8cb8745f8704cba3c9a) – Keep your WordPress core, themes, and plugins up to date automatically.
 
 == Installation ==
 
-1. Upload the folder `custom-search-plugin` to the directory `/wp-content/plugins/`.
-2. Activate the plugin via the 'Plugins' menu in WordPress.
-3. Plugin settings are available in "Custom Search"->"Settings".
+1. Upload the `custom-search-plugin` folder to `/wp-content/plugins/`
+2. Activate the plugin via the 'Plugins' menu in WordPress
+3. Go to “Custom Search” > “Settings” to configure
 
-[View a Step-by-step Instruction on Custom Search Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
+[Step-by-step Installation Instruction](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
 
 == Frequently Asked Questions ==
 
-= How to use Custom Search plugin? =
+= How do I enable custom search for specific post types? =
 
-Go to the Settings page and select post types and taxonomies that you would like to add to the search. For editing the display order of search results, move the elements of the list in the necessary order.
+Go to Custom Search > Settings and select the post types and taxonomies you want to include in the search. You can also control their display order.
 
-= I have some problems with the plugin's work. What Information should I provide to receive proper support? =
+= Can I use this plugin with Elementor or other page builders? =
 
-Please make sure that the problem hasn't been discussed yet on our forum (<https://support.bestwebsoft.com>). If no, please provide the following data along with your problem's description:
-- The link to the page where the problem occurs
-- The name of the plugin and its version. If you are using a pro version - your order number.
-- The version of your WordPress installation
-- Copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/)
+Yes, you can place the custom search bar anywhere using a shortcode, making it compatible with any builder like Elementor or WPBakery.
+
+= I need help. What should I provide for support? =
+
+Please include:
+- Plugin name and version (mention Pro if used)
+- WordPress version
+- Link to the issue
+- System status (read how here: https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/)
+
 
 == Screenshots ==
 
