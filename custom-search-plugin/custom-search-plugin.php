@@ -6,7 +6,7 @@ Description: Add custom post types to WordPress website search results.
 Author: BestWebSoft
 Text Domain: custom-search-plugin
 Domain Path: /languages
-Version: 1.51
+Version: 1.52
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
  */
@@ -152,6 +152,8 @@ if ( ! function_exists( 'cstmsrch_default_options' ) ) {
 			'fields'                    => array(),
 			'show_hidden_fields'        => 0,
 			'show_tabs_post_type'       => 0,
+			'google_search'             => 0,
+			'google_search_id'          => '',
 		);
 
 		return $cstmsrch_options_default;
@@ -932,6 +934,24 @@ if ( ! function_exists( 'cstmsrch_request' ) ) {
 	}
 }
 
+
+if ( ! function_exists( 'cstmsrch_google_js' ) ) {
+	/**
+	 * Add a class with theme name
+	 *
+	 * @param array $classes Classes array.
+	 * @return array $classes Classes array.
+	 */
+	function cstmsrch_google_js() {
+		global $cstmsrch_options;
+		if ( isset( $cstmsrch_options['google_search'] ) && 1 === $cstmsrch_options['google_search'] && ! empty( $cstmsrch_options['google_search_id'] ) ) {
+			?>
+			<script async src="https://cse.google.com/cse.js?cx=<?php echo esc_html( $cstmsrch_options['google_search_id'] ); ?>"></script>
+			<?php
+		}
+	}
+}
+
 if ( ! function_exists( 'cstmsrch_theme_body_classes' ) ) {
 	/**
 	 * Add a class with theme name
@@ -962,6 +982,15 @@ if ( ! function_exists( 'cstmsrch_search_shortcode' ) ) {
 	}
 }
 
+if ( ! function_exists( 'cstmsrch_google_search_shortcode' ) ) {
+	/**
+	 * Function shows the shortcode
+	 */
+	function cstmsrch_google_search_shortcode() {
+		return '<div class="gcse-search"></div>';
+	}
+}
+
 register_activation_hook( __FILE__, 'cstmsrch_plugin_activate' );
 add_action( 'plugins_loaded', 'cstmsrch_plugins_loaded' );
 add_action( 'admin_menu', 'add_cstmsrch_admin_menu' );
@@ -972,6 +1001,7 @@ add_action( 'loop_start', 'cstmsrch_add_menu_search_header' );
 add_action( 'wp_enqueue_scripts', 'cstmsrch_scripts' );
 
 add_shortcode( 'cstmsrch_search', 'cstmsrch_search_shortcode' );
+add_shortcode( 'cstmsrch_google_search', 'cstmsrch_google_search_shortcode' );
 
 /* Adds "Settings" link to the plugin action page */
 add_filter( 'plugin_action_links', 'cstmsrch_action_links', 10, 2 );
@@ -982,5 +1012,6 @@ add_action( 'admin_notices', 'cstmsrch_admin_notices' );
 add_filter( 'posts_distinct', 'cstmsrch_distinct' );
 add_filter( 'posts_join', 'cstmsrch_join' );
 add_filter( 'posts_where', 'cstmsrch_request' );
+add_action( 'wp_head', 'cstmsrch_google_js' );
 /* add theme name as class to body tag */
 add_filter( 'body_class', 'cstmsrch_theme_body_classes' );

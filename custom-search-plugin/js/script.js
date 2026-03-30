@@ -29,5 +29,13 @@
 				}
 			}
 		} );
+
+		$( '#cstmsrch_google_search' ).bind( 'change', function() {
+			if ( $( this ).is( ':checked' ) ) {
+				$( '.cstmsrch_google_search' ).show();
+			} else {
+				$( '.cstmsrch_google_search' ).hide();
+			}
+		} ).trigger( 'change' );
 	} );
 } )( jQuery );

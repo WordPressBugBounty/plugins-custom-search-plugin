@@ -34,3 +34,9 @@
 .vacancy .cstmsrch_thumbnail_left img {
 	display: block !important;
 }
+.gsc-search-box table {
+	margin: 0;
+}
+.gstl_50.gssb_c {
+	margin-top: 25px;
+}

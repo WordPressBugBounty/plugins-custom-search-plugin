@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: custom search wordpress, search custom post type wordpress plugin, wordpress custom search form, wordpress search custom fields, custom search bar elementor, wordpress custom search results page, customize search page wordpress
-Requires at least: 5.6
-Tested up to: 6.9
-Stable tag: 1.51
+Requires at least: 6.2
+Tested up to: 6.9.4
+Stable tag: 1.52
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,7 @@ https://www.youtube.com/watch?v=qF2-pFM_ESw
 * Fast performance with optimized queries
 * Works with any WordPress theme
 * RTL and translation-ready
+* Google Search
 
 > **Pro Features**
 >
@@ -116,6 +117,10 @@ Please include:
 4. Search results displayed by tabs.
 
 == Changelog ==
+
+= V1.52 - 30.03.2026 =
+* NEW: The Google Search is added.
+* Update : All functionality was updated for WordPress 6.9.4.
 
 = V1.51 - 08.08.2024 =
 * Load optimization for search results.
@@ -313,7 +318,11 @@ Please include:
 
 == Upgrade Notice ==
 
-= V1.51 =
+= V2.0 =
+* New features added.
+* The compatibility with new WordPress version updated.
+
+ V1.51 =
 * Usability improved.
 * The compatibility with new WordPress version updated.
 

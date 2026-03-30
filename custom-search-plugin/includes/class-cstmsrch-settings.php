@@ -169,6 +169,8 @@ if ( ! class_exists( 'Cstmsrch_Settings_Tabs' ) ) {
 				$this->options['fields'] = array_map( 'sanitize_text_field', array_map( 'wp_unslash', $this->options['fields'] ) );
 				$this->options['show_hidden_fields']  = isset( $_REQUEST['cstmsrch_show_hidden_fields'] ) ? 1 : 0;
 				$this->options['show_tabs_post_type'] = isset( $_REQUEST['cstmsrch_show_tabs_post_type'] ) ? absint( $_REQUEST['cstmsrch_show_tabs_post_type'] ) : 0;
+				$this->options['google_search'] = isset( $_REQUEST['cstmsrch_google_search'] ) ? absint( $_REQUEST['cstmsrch_google_search'] ) : 0;
+				$this->options['google_search_id'] = isset( $_REQUEST['cstmsrch_google_search_id'] ) ? sanitize_text_field( wp_unslash( $_REQUEST['cstmsrch_google_search_id'] ) ) : '';
 
 				update_option( 'cstmsrch_options', $this->options );
 
@@ -211,6 +213,25 @@ if ( ! class_exists( 'Cstmsrch_Settings_Tabs' ) ) {
 			?>
 			<table class="form-table cstmsrch-form-table" id="cstmsrch_settings_form">
 				<tr valign="top">
+					<th scope="row"><?php esc_html_e( 'Enable Google Search', 'custom-search-plugin' ); ?></th>
+					<td class="cstmsrch_names">
+						<label>
+							<input type="checkbox" id="cstmsrch_google_search" <?php checked( $this->options['google_search'], 1 ); ?> name="cstmsrch_google_search" value="1" />
+						</label>
+					</td>
+				</tr>
+				<tr valign="top" class="cstmsrch_google_search">
+					<th scope="row"><?php esc_html_e( 'Programmable Search Engine ID', 'custom-search-plugin' ); ?></th>
+					<td class="cstmsrch_names">
+						<label>
+							<input type="text" name="cstmsrch_google_search_id" value="<?php echo esc_html( $this->options['google_search_id'] ); ?>" />
+						</label>
+						<br /><span class="bws_info"><?php esc_html_e( 'You can find your Programmable Search Engine ID on the all Search Engines page', 'custom-search-plugin' ); ?> - <a href="https://programmablesearchengine.google.com/controlpanel/all">Search Engines</a></span>
+						<br /><span class="bws_info"><?php esc_html_e( 'You can configure all settings regarding the appearance and operation of Google Search on the same page where you will find the Programmable Search Engine ID.', 'custom-search-plugin' ); ?></span>
+						<br /><span class="bws_info" style="color: red"><?php esc_html_e( 'WARNING! All settings below do not apply to Google Search.', 'custom-search-plugin' ); ?></span>
+					</td>
+				</tr>
+				<tr valign="top">
 					<th scope="row"><?php esc_html_e( 'Enable Search by', 'custom-search-plugin' ); ?></th>
 					<td class="cstmsrch_names">
 						<div id="cstmsrch-post-types-settings" class="cstmsrch-checkbox-section">
@@ -243,7 +264,7 @@ if ( ! class_exists( 'Cstmsrch_Settings_Tabs' ) ) {
 									<div class="cstmsrch_select_all_block">
 										<label>
 											<input type="checkbox" <?php echo esc_html( $taxonomies_select_all ); ?> style="display:none;" class="cstmsrch_cb_select_all" />
-											<span"><strong><?php esc_html_e( 'Taxonomies', 'custom-search-plugin' ); ?></strong></span>
+											<span><strong><?php esc_html_e( 'Taxonomies', 'custom-search-plugin' ); ?></strong></span>
 										</label>
 									</div>
 									<?php
@@ -255,7 +276,7 @@ if ( ! class_exists( 'Cstmsrch_Settings_Tabs' ) ) {
 										?>
 											<label>
 												<input type="checkbox" <?php echo ( in_array( $taxonomy, $this->cstmsrch_taxonomies_enabled ) ? 'checked="checked"' : '' ); ?> name="cstmsrch_taxonomies[]" class="cstmsrch_cb_select" value="<?php echo esc_attr( $taxonomy ); ?>"/>
-												<span><?php echo esc_html( $label . '(' . __( 'for', 'custom-search-plugin' ) . ' "' . $object_type_name . '")' ); ?></span>
+												<span><?php echo esc_html( $label . ' (' . __( 'for', 'custom-search-plugin' ) . ' "' . $object_type_name . '")' ); ?></span>
 											</label><br />
 									<?php } ?>
 								</fieldset>
@@ -496,6 +517,15 @@ if ( ! class_exists( 'Cstmsrch_Settings_Tabs' ) ) {
 					 <div class="inside">
 						<?php esc_html_e( 'Add the "Search" to your pages or posts using the following shortcode:', 'custom-search-plugin' ); ?>
 						<?php bws_shortcode_output( '[cstmsrch_search]' ); ?>
+					</div>
+			</div>
+			<div class="postbox">
+				<h3 class="hndle">
+					<?php esc_html_e( 'Google Search Shortcode', 'custom-search-plugin' ); ?>
+				</h3>
+					 <div class="inside">
+						<?php esc_html_e( 'Add the "Google Search" to your pages or posts using the following shortcode:', 'custom-search-plugin' ); ?>
+						<?php bws_shortcode_output( '[cstmsrch_google_search]' ); ?>
 					</div>
 			</div>
 			<?php
